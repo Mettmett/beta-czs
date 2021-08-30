@@ -1,0 +1,66 @@
+---
+
+# Basic options
+
+baseURL: "https://beta.computerz.solutions/"
+copyrigt: "CC-BY-NC-SA - 2014-2021 - Julien HOMMET"
+DefaultContentLanguage: "fr"
+disableAliases: true
+enableRobotsTXT: true
+footnoteReturnLinkContents: ↩
+title: "BETA ComputerZ Solutions"
+
+# Misc settings
+
+languages:
+  fr:
+    languageName: "Français"
+    weight: 1
+    description: "Parce qu'il y a toujours une solution"
+    contentDir: "content/fr"
+
+  en:
+    languageName: "English"
+    weight: 2
+    description: "There's always a solution"
+    contentDir: "content/en"
+
+outputFormats:
+  markdown:
+    baseName: markdown
+    mediaType: "text/html"
+
+params:
+  authorName: "Julien HOMMET"
+  gitHubUser: "Mettmett"
+  linkedinName: "julienhommet"
+  twitter_handle: "_ComputerZ"
+
+permalinks:
+  posts: /:title/
+
+privacy:
+  disqus:
+    disable: true
+
+  googleAnalytics:
+    disable: true
+
+  twitter:
+    enableDNT: true
+
+  vimeo:
+    disable: true
+
+  youtube:
+    privacyEnhanced: true
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+taxonomies:
+  tag: tags
+  category: categories
+  project_tag: project_tags
